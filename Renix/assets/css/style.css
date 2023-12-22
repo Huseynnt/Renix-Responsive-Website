@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Roboto&display=swap');
+
+:root {
+    --main-font: 'Big Shoulders Display', sans-serif;
+    --font: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background-color: white;
+    color: black;
+}
+
+/* ###############################- NAVBAR -############################### */
+
+header {
+    background-color: black;
+    padding-bottom: 100px;
+}
+
+header a {
+    color: white !important;
+}
+
+header .nav-link {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--font);
+}
+
+header .toggler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border: 1px solid white;
+}
+
+header .toggler div {
+    background-color: white;
+    height: 10px;
+    width: 10px;
+}
+
+/* ###############################- HERO HOME -############################### */
+
+.hero-section {
+    position: relative;
+    margin-top: 100px;
+}
+
+.hero-section .image {
+    position: absolute;
+    width: 700px;
+    bottom: 0;
+    right: 0;
+}
+
+.hero-section .image img {
+    height: 100%;
+    width: 100%;
+}
+
+.hero-section .container {
+    position: relative;
+}
+
+.hero-section h1,
+.hero-section h2,
+.hero-section p {
+    color: white;
+}
+
+.hero-section h1 {
+    font-family: var(--main-font);
+    font-size: 140px;
+}
+
+.hero-section h2,
+.hero-section p {
+    font-family: var(--font);
+}
+
+.hero-section .icon>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.hero-section .middle-hero p {
+    width: 20%;
+    font-family: var(--font);
+    color: #CCCCCC;
+    font-size: 19px;
+}
+
+.hero-section .bottom-hero h2 {
+    font-family: var(--font);
+    font-size: 20px;
+}
+
+.hero-section .bottom-hero p {
+    font-family: var(--font);
+    color: #CCCCCC;
+    font-size: 15px;
+}
+
+.hero-section .bottom-hero .left,
+.hero-section .bottom-hero .right {
+    border-left: 1px solid #CCCCCC;
+}
+
+/* ###############################- CLIENTS HOME -############################### */
+
+.clients-section ::selection {
+    background-color: black;
+    color: white;
+}
+
+.clients-section {
+    padding: 150px 0;
+}
+
+.clients-section h1 {
+    font-family: var(--main-font);
+    font-size: 60px;
+}
+
+/* ###############################- LATEST NEWS HOME -############################### */
+
+.latest-news {
+    padding: 150px 0;
+    background-color: black;
+}
+
+.latest-news img {
+    height: 100%;
+    width: 100%;
+}
+
+.latest-news h1 {
+    font-size: 60px;
+    font-family: var(--main-font);
+    margin-bottom: 20px;
+    color: white;
+}
+
+.latest-news p {
+    margin-top: 10px;
+    font-family: var(--font);
+    color: white;
+}
+
+.latest-news p span {
+    color: #e02223;
+}
+
+/* ###############################- MARQUEE HOME-############################### */
+
+.marquee-section {
+    margin: 30px 0;
+}
+
+.marquee-section h1 {
+    font-family: var(--main-font);
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+
+
+/* ###############################- FOOTER -############################### */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 150px 0;
+}
+
+footer h1 {
+    font-family: var(--main-font);
+    font-size: 130px;
+}
+
+footer .bottom>div:nth-child(1) {
+    border-right: 1px solid #CCCCCC;
+}
+
+footer .top p {
+    font-family: var(--font);
+    color: #CCCCCC;
+    font-size: 18px;
+    width: 700px;
+}
+
+footer h2 {
+    font-family: var(--font);
+    font-size: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #CCCCCC;
+}
+
+/* ###############################- MEDIA HOME -############################### */
+
+@media only screen and (max-width:1200px) {
+    footer .top p {
+        max-width: 400px;
+    }
+
+    .subscribe h1 {
+        font-size: 40px !important;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    .hero-section .middle-hero p {
+        width: 300px;
+        margin-bottom: 24px;
+    }
+
+    .hero-section h1 {
+        font-size: 100px;
+    }
+
+    footer .top p {
+        max-width: 100%;
+    }
+
+    footer h1 {
+        font-size: 100px;
+    }
+
+    footer .bottom>div:nth-child(1) {
+        border-right: 0px;
+        border-bottom: 1px solid #CCCCCC;
+    }
+
+    .about-us h1 {
+        font-size: 80px !important;
+    }
+
+    .carousel-item img {
+        width: 100% !important;
+    }
+
+    .about-company h1 {
+        font-size: 40px !important;
+    }
+
+    .subscribe h1 {
+        width: 100% !important;
+    }
+
+    .subscribe form {
+        width: 100% !important;
+    }
+
+    .contact-header {
+        height: 380px !important;
+    }
+
+    .contact-header h1 {
+        bottom: 30px !important;
+        font-size: 120px !important;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .contact-header {
+        height: 300px !important;
+    }
+
+    .contact-header h1 {
+        bottom: 30px !important;
+        font-size: 100px !important;
+    }
+}
+
+/* ###############################- ABOUT US -############################### */
+
+.about-us {
+    background-color: black;
+    padding-bottom: 100px;
+}
+
+.about-us p {
+    font-family: var(--font);
+    color: #CCCCCC;
+}
+
+.about-us h1 {
+    color: white;
+    font-family: var(--main-font);
+    font-size: 125px;
+}
+
+.about-us a {
+    text-decoration: none;
+    color: #CCCCCC;
+}
+
+.carousel-item img {
+    margin: 0 auto;
+    width: 50%;
+}
+
+/* ###############################- ABOUT COMPANY -############################### */
+
+.about-company ::selection {
+    background-color: black;
+    color: white;
+}
+
+.about-company {
+    padding: 100px 0;
+}
+
+.about-company h1 {
+    font-family: var(--main-font);
+    font-size: 60px;
+}
+
+.about-company p {
+    font-family: var(--font);
+    color: #CCCCCC;
+}
+
+/* ###############################- SUBSCRIBE -############################### */
+
+.subscribe {
+    padding: 100px 0;
+    background-color: #E02223;
+}
+
+.subscribe h1 {
+    color: white;
+    font-family: var(--main-font);
+    font-size: 60px;
+    width: 50%;
+}
+
+.subscribe form {
+    position: relative;
+    width: 50%;
+}
+
+.subscribe input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 10px 0px;
+}
+
+.subscribe input::placeholder {
+    color: white;
+    font-family: var(--font);
+}
+
+.subscribe input:focus {
+    outline: none;
+}
+
+.subscribe button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-family: var(--font);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* ###############################- CONTACT HEADER -############################### */
+
+.contact-header {
+    position: relative;
+    background-image: url(../images/titlebar2.jpg);
+    background-position: center;
+    height: 500px;
+}
+
+.contact-header h1 {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--main-font);
+    color: white;
+    font-size: 150px;
+}
+
+.map {
+    width: 100%;
+    height: 500px;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+}
+
+/* ###############################- GET-IN-TOUCH -############################### */
+
+.get-in-touch ::selection {
+    background-color: black;
+    color: white;
+}
+
+.get-in-touch .form-container {
+    background-color: #F3F3F3;
+}
+
+.get-in-touch h1 {
+    font-family: var(--main-font);
+    font-size: 50px;
+}
+
+.get-in-touch .form-container input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.get-in-touch .form-container input:focus {
+    outline: none;
+}
+
+.get-in-touch .form-container textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    resize: none;
+}
+
+.get-in-touch .form-container textarea:focus {
+    outline: none;
+}
+
+.get-in-touch .form-container button {
+    padding: 15px;
+    width: 200px;
+    border-radius: 100px;
+    border: 1px solid black;
+    font-family: var(--font);
+    font-size: 18px;
+}
+
+.get-in-touch .form-container button:hover {
+    color: white;
+    background-color: black;
+    transition: 0.3s ease;
+}
+
+.get-in-touch .image {
+    height: 153px;
+    width: 250px;
+}
+
+.get-in-touch img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.get-in-touch a {
+    color: black;
+    text-decoration: none;
+}
+
+.get-in-touch button {
+    background-color: transparent;
+    border: none;
+}
